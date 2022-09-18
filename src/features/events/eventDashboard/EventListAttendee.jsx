@@ -1,7 +1,10 @@
 import React from 'react';
+import {Image, List} from "semantic-ui-react";
 
-export default function EventListItem() {
+export default function EventListAttendee({attendee}) {
     return (
-        <h1>ListItem</h1>
+        <List.Item>
+            <Image size='mini' circular src={attendee.photoURL}/>
+        </List.Item>
     )
 }
